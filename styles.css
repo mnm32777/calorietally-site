@@ -235,3 +235,19 @@ footer a { font-weight: 600; }
   .shot img { border-color: #2a3d3b; }
   .status.err { color: #f2b8b5; }
 }
+
+/* ---------- store buttons ---------- */
+.stores { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.stores.center { justify-content: center; }
+.store {
+  display: inline-flex; align-items: center; gap: 12px; padding: 10px 20px 10px 16px;
+  border-radius: 14px; background: #111; color: #fff; min-width: 200px;
+  border: 1px solid #111; transition: transform .12s ease, box-shadow .12s ease;
+}
+.store:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,.25); }
+.store svg { width: 28px; height: 28px; flex: none; }
+.store span { display: flex; flex-direction: column; line-height: 1.15; font-weight: 700; font-size: 1.25rem; text-align: left; }
+.store small { font-size: .7rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; opacity: .85; }
+.store.soon { background: transparent; color: var(--ink-soft); border: 1.5px dashed var(--line); cursor: default; }
+.store.soon:hover { transform: none; box-shadow: none; }
+@media (prefers-color-scheme: dark) { .store:not(.soon) { background: #000; border-color: #444; } }
