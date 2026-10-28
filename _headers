@@ -1,0 +1,8 @@
+# Cloudflare Pages response headers for every page on ateright.com.
+# Scripts: only this origin plus Cloudflare's own /cdn-cgi/ (email
+# obfuscation). The support form fetches api.ateright.com; everything else
+# is same-origin. Inline styles stay allowed; there are no inline scripts.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://ateright.com/cdn-cgi/; connect-src https://api.ateright.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; form-action 'none'; base-uri 'none'
+  Strict-Transport-Security: max-age=31536000
+  X-Frame-Options: DENY
