@@ -25,7 +25,7 @@
   <div class="wrap" style="max-width:760px">
     <div class="kicker">Privacy policy</div>
     <h2>Your food log is yours</h2>
-    <p class="sub">Effective November 4, 2026. AteRight is made by CardRama, LLC. This page explains, in plain words, what data the app touches and where it goes.</p>
+    <p class="sub">Effective November 6, 2026. AteRight is made by CardRama, LLC. This page explains, in plain words, what data the app touches and where it goes.</p>
 
     <h3 style="margin-top:28px">The short version</h3>
     <ul style="margin:10px 0 0 20px;color:var(--ink-soft)">
@@ -42,7 +42,7 @@
     <ul style="margin:10px 0 0 20px;color:var(--ink-soft)">
       <li><b>With your own key</b> (free version): directly to the provider you chose (Groq, Google Gemini, or Anthropic), under that provider's own terms and privacy policy. Your key is stored securely on your phone.</li>
       <li><b>With Premium</b>: through our server (api.ateright.com) to Anthropic. Our server passes the request along and returns the answer; it does not keep the content. For the chat feature, the request includes a summary of that day's log so the answers fit your day; weekly insights and the written read in Premium reports include a summary of that period (averages, days within the calorie goal, macros, most-logged foods, weight trend, and goal). The report numbers themselves are calculated on your phone.</li>
-      <li><b>With free AI lookups</b> (no key needed): through our server (api.ateright.com) to Anthropic, the same way as Premium. Free lookups cover food lookups only: a meal you type or say, and a meal, label, or leftovers photo. The first time, the app asks our server for a free lookup pass, a random code like a license key; that request carries nothing about you. The app sends the pass with each lookup. Our server passes the request along and returns the answer; it does not keep the food text, the photos, or the answer. It does count the pass's AI calls, so free lookups have a limit (see "Free AI lookups" below).</li>
+      <li><b>With free AI lookups</b> (no key needed): through our server (api.ateright.com) to Anthropic, the same way as Premium. Free lookups cover food lookups: a meal you type or say, and a meal, label, or leftovers photo, plus one free try each of reading a menu, "Make it at home" for one menu dish, and reading a recipe from photos. The first time, the app asks our server for a free lookup pass, a random code like a license key; that request carries nothing about you. The app sends the pass with each lookup. Our server passes the request along and returns the answer; it does not keep the food text, the photos, or the answer. It does count the pass's AI calls, so free lookups have a limit (see "Free AI lookups" below).</li>
     </ul>
     <p class="sub">Before anything is sent to an AI service for the first time, the app shows who will receive it and what is sent, and sends nothing unless you tap Allow. You can withdraw that permission anytime in Settings &gt; AI data sharing; AI features then pause until you allow them again.</p>
     <p class="sub">Food lookups may also query the USDA FoodData Central database and Open Food Facts (for barcodes) with the food name or barcode number only.</p>
@@ -66,7 +66,7 @@
     <p class="sub">Purchases are handled by Google Play or Apple; we never see your card details. To run Premium, our server keeps a license record: the license key, its status, your monthly AI usage count, and, for store purchases, a reference to the purchase so we can confirm it is still active. This record contains no name, email, or food data.</p>
 
     <h3 style="margin-top:28px">Free AI lookups</h3>
-    <p class="sub">Every install gets 20 free AI lookups, with no key, no card, and no sign up. They last 30 days from your first lookup. They are not a subscription. To run them, our server keeps a pass record: the pass code, when it was made, its limits, how many AI calls it has made, and when its first call was. It contains no name, email, device ID, or food data, so it does not identify you. The app keeps the pass code in the phone's secure storage.</p>
+    <p class="sub">Every install gets 35 free AI lookups, with no key, no card, and no sign up, and one free try each of three Premium features. They last 30 days from your first lookup. They are not a subscription. To run them, our server keeps a pass record: the pass code, when it was made, its limits, how many AI calls it has made (in all, and for each free try), and when its first call was. It contains no name, email, device ID, or food data, so it does not identify you. The app keeps the pass code in the phone's secure storage.</p>
     <p class="sub">To keep anyone from taking many passes, our server counts the passes asked for from each internet connection in a day. It counts them under a scrambled form (a keyed hash) of the connection's IP address block, never the address itself, and deletes that count 2 days after its last count.</p>
     <p class="sub">The pass record deletes itself about 13 months (400 days) after it was made, and its call counts about 13 months after its first call. Uninstalling the app removes the pass code from your phone.</p>
 
