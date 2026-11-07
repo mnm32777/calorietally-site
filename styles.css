@@ -276,3 +276,12 @@ footer a { font-weight: 600; }
 .store.soon { background: transparent; color: var(--ink-soft); border: 1.5px dashed var(--line); cursor: default; }
 .store.soon:hover { transform: none; box-shadow: none; }
 @media (prefers-color-scheme: dark) { .store:not(.soon) { background: #000; border-color: #444; } }
+
+/* How-to video cards on the guide: each links to the video on YouTube.
+   Plain links, no embedded player, so the page loads nothing from YouTube. */
+a.card.vid { display: block; color: inherit; text-decoration: none; }
+a.card.vid:hover, a.card.vid:focus-visible { border-color: var(--brand); }
+a.card.vid h3 { color: var(--ink); }
+a.card.vid p { color: var(--brand-deep); font-weight: 600; }
+.vid-num { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--brand-soft); color: var(--brand-deep); font-weight: 800; }
+.vid-all { margin-top: 24px; }
