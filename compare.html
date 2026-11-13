@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A calorie counter without the paywall | AteRight</title>
-<meta name="description" content="Switching from a paid calorie tracker? AteRight logs meals by typing, voice, photo or barcode, with macro goals, no ads and no account. Free with your own AI key.">
+<title>AteRight vs MyFitnessPal, Lose It! and Cronometer</title>
+<meta name="description" content="Your food diary is not their product. Compare what MyFitnessPal, Lose It! and Cronometer list about tracking and data sharing with AteRight: no account, no ads, no tracking.">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="styles.css?v=20261105">
 </head>
@@ -17,82 +17,158 @@
     <a href="guide.html">How to use it</a>
     <a href="premium.html">Premium</a>
     <a href="support.html">Support</a>
+    <a href="press.html">Press</a>
     <a class="btn" href="download.html">Get the app</a>
   </div>
 </div></nav>
 
+<style>
+  .hero-x { padding-top: 64px; padding-bottom: 28px; }
+  .hero-x h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.12; letter-spacing: -1px; max-width: 16em; }
+  .hero-x h1 em { color: var(--accent); font-style: normal; }
+  .hero-x .lede { font-size: 1.15rem; color: var(--ink-soft); margin: 18px 0 26px; max-width: 38em; }
+  .hero-x .ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .chip { font-size: .8rem; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+          background: color-mix(in srgb, var(--amber) 16%, var(--card)); color: var(--ink); }
+  .chip.ok { background: var(--brand-soft); color: var(--brand-deep); }
+  .card.us { border: 2px solid var(--brand); }
+  .card .who { font-weight: 800; font-size: 1.05rem; }
+  .card .src { font-size: .8rem; margin-top: 10px; }
+  .vs6 tr.srcrow td, .vs6 tr.srcrow th { font-size: .78rem; line-height: 1.6; }
+  .cards.fit { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+  .table-x { overflow-x: auto; margin-top: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); }
+  table.vs6 { border-collapse: collapse; min-width: 660px; width: 100%; font-size: .9rem; }
+  .vs6 th, .vs6 td { padding: 12px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  .vs6 thead th { font-size: .95rem; }
+  .vs6 th[scope=row] { position: sticky; left: 0; background: var(--card); font-weight: 700; min-width: 150px; }
+  .vs6 td { color: var(--ink-soft); }
+  .vs6 td.us, .vs6 th.us { background: var(--brand-soft); color: var(--brand-deep); font-weight: 800; }
+  .vs6 tr:last-child th, .vs6 tr:last-child td { border-bottom: 0; }
+  .tbd { color: var(--amber); font-style: italic; }
+  .receipt { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; margin-top: 14px; }
+  .receipt h3 { font-size: 1.1rem; }
+  .receipt ul { margin: 8px 0 0 20px; color: var(--ink-soft); }
+  .receipt li { margin: 4px 0; }
+  .receipt .src { font-size: .8rem; margin-top: 8px; }
+  .big-no { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 28px; }
+  .big-no .card h3 { font-size: 1.15rem; }
+  .promise { background: var(--brand); color: #fff; border-radius: var(--radius); padding: 28px 26px; margin-top: 26px; }
+  .promise h3 { font-size: 1.35rem; }
+  .promise ul { margin: 12px 0 0 22px; font-size: 1.05rem; }
+  .promise li { margin: 6px 0; }
+  @media (prefers-color-scheme: dark) { .promise { background: var(--brand-soft); color: var(--ink); } }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .fine2 { font-size: .82rem; color: var(--ink-soft); margin-top: 14px; }
+</style>
+
 <section>
-  <div class="wrap">
+  <div class="wrap hero-x">
     <div class="kicker">Compare</div>
-    <h2>A calorie counter without the paywall</h2>
-    <p class="sub">Coming from MyFitnessPal, Lose It! or another tracker? Here is what AteRight does differently, what it costs, and the one honest trade.</p>
-    <table class="compare">
-      <tr><th></th><th>Typical paid tracker</th><th>AteRight</th></tr>
-      <tr><td>Price</td><td>About $80 a year for the full app</td><td>Free with your own AI key (Premium optional)</td></tr>
-      <tr><td>How you log</td><td>Search a database, then weigh the portion</td><td>Type it, say it, photograph it, or scan the barcode</td></tr>
-      <tr><td>Barcode scanning</td><td>Often a paid feature</td><td>Free</td></tr>
-      <tr><td>Custom macro goals</td><td>Often a paid feature</td><td>Free</td></tr>
-      <tr><td>Photo and voice logging</td><td>Rare or paid</td><td>Free</td></tr>
-      <tr><td>Where the numbers come from</td><td>Often entries other users typed in</td><td>USDA lab data, printed labels and chain menus, each one labeled</td></tr>
-      <tr><td>Account</td><td>Required</td><td>None</td></tr>
-      <tr><td>Your food diary</td><td>On their servers</td><td>On your phone only</td></tr>
-      <tr><td>Ads</td><td>On the free tier</td><td>None, ever</td></tr>
-      <tr><td>Progress</td><td>Streaks you can lose</td><td>Good Weeks you keep</td></tr>
-    </table>
-    <p class="fine" style="margin-top:10px;color:var(--ink-soft)">"Typical paid tracker" describes the common pattern in popular calorie apps, not any one app. Prices and features change; check each app's own page.</p>
+    <h1>Your food diary is <em>not their product.</em></h1>
+    <p class="lede">The biggest calorie apps keep your diary on their servers, and their own App Store labels say they use your data to track you. AteRight keeps your diary on your phone. No account, no ads, no tracking. We can't sell what we never have.</p>
+    <div class="ctas"><a class="btn" href="download.html">Get AteRight free</a><a class="btn ghost" href="your-data.html">How we treat your data</a></div>
   </div>
 </section>
 
 <section class="alt">
   <div class="wrap">
-    <div class="kicker">What it costs</div>
-    <h2>The honest trade</h2>
-    <div class="cards">
-      <div class="card"><div class="emo">🎁</div><h3>35 free lookups</h3><p>Start with no key, no card and no sign-up. Your first 35 AI lookups are on us, for 30 days from the first one.</p></div>
-      <div class="card"><div class="emo">🔑</div><h3>Then your own free key</h3><p>A key from Google Gemini or Groq costs nothing and takes about two minutes. The app walks you through every step. With it, AteRight keeps working at no cost.</p></div>
-      <div class="card"><div class="emo">⭐</div><h3>Or Premium</h3><p>Rather skip keys? <a href="premium.html">Premium</a> runs on our AI and adds a chat, weekly insights, menu scanning and reports. $5.99 a month or $39.99 a year.</p></div>
+    <div class="kicker">Don't take our word for it</div>
+    <h2>Read their privacy labels</h2>
+    <p class="sub">Every app on the App Store has to list the data it uses to track you. Apple calls it tracking when an app links what it knows about you with data from other companies' apps and websites for targeted ads, or shares it with data brokers. Here is what each app lists.</p>
+    <div class="cards fit">
+      <div class="card us"><div class="who">AteRight</div><div class="chips"><span class="chip ok">None</span></div><p style="margin-top:8px">Nothing is used to track you. Nothing is linked to you, because there is no "you" on our side: no account, no name, no email.</p></div>
+      <div class="card"><div class="who">MyFitnessPal</div><div class="chips"><span class="chip">Identifiers</span><span class="chip">Usage Data</span></div><div class="src"><a href="https://apps.apple.com/us/app/myfitnesspal-calorie-counter/id341232718" rel="nofollow">See their label</a></div></div>
+      <div class="card"><div class="who">Lose It!</div><div class="chips"><span class="chip">Contact Info</span><span class="chip">Identifiers</span><span class="chip">Usage Data</span></div><div class="src"><a href="https://apps.apple.com/us/app/lose-it-calorie-counter/id297368629" rel="nofollow">See their label</a></div></div>
+      <div class="card"><div class="who">Cronometer</div><div class="chips"><span class="chip">Contact Info</span><span class="chip">Identifiers</span><span class="chip">Usage Data</span></div><div class="src"><a href="https://apps.apple.com/us/app/cronometer-calorie-counter/id1145935738" rel="nofollow">See their label</a></div></div>
     </div>
   </div>
 </section>
 
 <section>
+  <div class="wrap">
+    <div class="kicker">Side by side</div>
+    <h2>AteRight against the big names</h2>
+    <p class="sub">Swipe the table sideways on a phone.</p>
+    <div class="table-x">
+      <table class="vs6">
+        <thead><tr><th scope="col"><span class="sr">Feature</span></th><th class="us" scope="col">AteRight</th><th scope="col">MyFitnessPal</th><th scope="col">Lose It!</th><th scope="col">Cronometer</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Account required</th><td class="us">No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+          <tr><th scope="row">Ads in the app</th><td class="us">None, ever</td><td>Yes</td><td>Yes</td><td>On the free version</td></tr>
+          <tr><th scope="row">Apple label: "Data Used to Track You"</th><td class="us">None</td><td>Identifiers, Usage Data</td><td>Contact Info, Identifiers, Usage Data</td><td>Contact Info, Identifiers, Usage Data</td></tr>
+          <tr><th scope="row">Google Play: data shared with other companies</th><td class="us">None</td><td>Location, personal info, device IDs</td><td>Personal info, device IDs</td><td>User IDs, for advertising</td></tr>
+          <tr><th scope="row">Where your food diary is kept</th><td class="us">On your phone only</td><td>Their servers</td><td>Their servers</td><td>Their servers</td></tr>
+          <tr><th scope="row">Barcode scanning</th><td class="us">Free</td><td>Premium only</td><td>Premium only</td><td>Free</td></tr>
+          <tr><th scope="row">Photo logging</th><td class="us">Meal and label photos free with your own AI key (menu scanning is Premium)</td><td>Premium only</td><td>Premium only</td><td>Gold only</td></tr>
+          <tr><th scope="row">Price for the full app, per year (US)</th><td class="us">Free with your own AI key, or Premium $39.99</td><td>$79.99</td><td>$79.99</td><td>$59.99</td></tr>
+          <tr class="srcrow"><th scope="row">Sources</th><td class="us"><a href="privacy.html" rel="nofollow">Privacy policy</a><br><a href="your-data.html" rel="nofollow">Your data</a></td><td><a href="https://www.myfitnesspal.com/premium" rel="nofollow">Premium page (price, barcode, Meal Scan)</a><br><a href="https://blog.myfitnesspal.com/meal-scan/" rel="nofollow">Meal Scan</a><br><a href="https://apps.apple.com/us/app/myfitnesspal-calorie-counter/id341232718" rel="nofollow">App Store</a><br><a href="https://play.google.com/store/apps/details?id=com.myfitnesspal.android" rel="nofollow">Google Play</a><br><a href="https://www.myfitnesspal.com/privacy-policy" rel="nofollow">Privacy policy</a></td><td><a href="https://loseit.zendesk.com/hc/en-us/articles/51906561286804-Lose-It-Membership-Tiers-Pricing" rel="nofollow">Membership and pricing (price, barcode, photo)</a><br><a href="https://apps.apple.com/us/app/lose-it-calorie-counter/id297368629" rel="nofollow">App Store</a><br><a href="https://www.loseit.com/how-it-works/#premium" rel="nofollow">Premium page</a><br><a href="https://play.google.com/store/apps/details?id=com.fitnow.loseit" rel="nofollow">Google Play</a></td><td><a href="https://cronometer.com/gold" rel="nofollow">Gold page (price, barcode, photo log)</a><br><a href="https://apps.apple.com/us/app/cronometer-calorie-counter/id1145935738" rel="nofollow">App Store</a><br><a href="https://play.google.com/store/apps/details?id=com.cronometer.android.gold" rel="nofollow">Google Play</a><br><a href="https://cronometer.com/privacy/" rel="nofollow">Privacy policy</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fine2">Checked November 13, 2026. Every fact comes from the company's own website, App Store listing, Google Play listing or privacy policy, linked in the Sources row. These are their own statements, and they change; follow the links for the current versions.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="kicker">In their own policies</div>
+    <h2>What they say about your data</h2>
+    <div class="receipt"><h3>MyFitnessPal</h3><ul>
+      <li>Its privacy policy says it shares your information with marketing and advertising partners and engages in targeted advertising.</li>
+      <li>It says some of its cookie uses may count as a "sale" or "sharing" of data under state privacy laws.</li>
+      <li>In March 2026 it announced an advertising business built on its users' nutrition and fitness data (an opt-in data feed, AdExchanger reported).</li>
+      <li>In 2018 a breach exposed about 150 million accounts.</li></ul>
+      <div class="src"><a href="https://www.myfitnesspal.com/privacy-policy" rel="nofollow">Privacy policy</a> · <a href="https://play.google.com/store/apps/details?id=com.myfitnesspal.android" rel="nofollow">Google Play</a> · <a href="https://www.adexchanger.com/marketers/myfitnesspal-wants-to-start-the-health-and-wellness-subsector-of-retail-media/" rel="nofollow">AdExchanger</a> · <a href="https://www.cbsnews.com/news/under-armour-myfitnesspal-hack-affects-150-million-user-accounts/" rel="nofollow">CBS News</a></div></div>
+    <div class="receipt"><h3>Lose It!</h3><ul>
+      <li>Its Google Play listing says it contains ads and shares personal info and device IDs with other companies for advertising or marketing.</li>
+      <li>The same listing says it collects the list of apps installed on your phone.</li></ul>
+      <div class="src"><a href="https://play.google.com/store/apps/details?id=com.fitnow.loseit" rel="nofollow">Google Play</a></div></div>
+    <div class="receipt"><h3>Cronometer</h3><ul>
+      <li>Says it does not sell personal information. For free users, it shares limited information with ad networks to show targeted ads, but not health information.</li>
+      <li>Ads go away with Gold, $59.99 a year.</li></ul>
+      <div class="src"><a href="https://cronometer.com/privacy/" rel="nofollow">Privacy policy</a> · <a href="https://cronometer.com/gold" rel="nofollow">Gold</a></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Check us too</div>
+    <h2>AteRight's labels</h2>
+    <div class="cards">
+      <div class="card us"><h3>App Store</h3><p>Data Used to Track You: <b>none</b>. Data Linked to You: <b>none</b>.</p></div>
+      <div class="card us"><h3>Google Play</h3><p>No ads. <b>No data shared</b> with other companies.</p></div>
+      <div class="card us"><h3>Our server</h3><p>No food diaries, no accounts, no names. When you use our AI, the request passes through and is not kept.</p></div>
+    </div>
+    <p class="sub" style="margin-top:18px">The whole story, in plain words: <a href="your-data.html">Your data is yours</a> and our <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+</section>
+
+<section class="alt">
   <div class="wrap">
     <div class="kicker">Switching over</div>
     <h2>Five minutes to your first meal</h2>
     <div class="steps">
-      <div class="step"><h3>Install and answer a few questions</h3><p>Height, weight, activity and how fast you want to go. AteRight works out a calorie goal with a standard medical formula and shows where every number comes from.</p></div>
-      <div class="step"><h3>Log a meal the way you would say it</h3><p>"Turkey sandwich with mayo and a small apple." AteRight splits it into foods and portions and works out the calories, protein, carbs and fat.</p></div>
-      <div class="step"><h3>Let Quick log learn your usual foods</h3><p>Your history in another app does not move over. Most people eat the same 20 to 30 foods, though, so within a couple of weeks most of your logging is one tap.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
-    <div class="kicker">Questions</div>
-    <h2>Before you switch</h2>
-    <div class="cards">
-      <div class="card"><h3>Is it really free?</h3><p>Yes. The app is free to download, has no ads, and works at no cost with a free AI key. Premium is optional, for people who want zero setup and the extras.</p></div>
-      <div class="card"><h3>Do I need an account?</h3><p>No. There is no sign-up, no email and no password. Your meals, weigh-ins and recipes stay on your phone, and you can back them up yourself.</p></div>
-      <div class="card"><h3>How accurate is it?</h3><p>Everyday foods are checked against the USDA's lab-measured database, packaged foods use the printed label, and chain restaurants use their published numbers. Anything estimated says so.</p></div>
-      <div class="card"><h3>Android and iPhone?</h3><p>Both. Android 8 or newer, or an iPhone with iOS 17 or newer.</p></div>
+      <div class="step"><h3>Install and answer a few questions</h3><p>Height, weight, activity and how fast you want to go. No sign up, no email.</p></div>
+      <div class="step"><h3>Log a meal the way you would say it</h3><p>"Turkey sandwich with mayo and a small apple." AteRight splits it into foods and portions and works out the calories and macros.</p></div>
+      <div class="step"><h3>Let Quick log learn your usual foods</h3><p>Your old diary stays behind with the other app. Most people eat the same 20 to 30 foods, so within a couple of weeks most logging is one tap.</p></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap" style="text-align:center">
-    <h2>Try it free</h2>
+    <h2>Take your diary back.<br><span style="color:var(--brand-deep)">Your data stays yours.</span></h2>
     <p class="sub" style="margin:10px auto 26px">No account, no ads, and 35 free AI lookups to start.</p>
     <div class="stores center"><a class="store" href="https://play.google.com/store/apps/details?id=gg.cardrama.ateright" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.6 2.3 13.5 12l-9.9 9.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1z"/><path fill="#FBBC04" d="m16.8 15.3-3.3-3.3 3.3-3.3 3.7 2.1c1 .6 1 2 0 2.5z"/><path fill="#EA4335" d="M13.5 12 3.6 21.7c.3.2.8.2 1.2 0l12-6.4z"/><path fill="#4285F4" d="M13.5 12 16.8 8.7l-12-6.4c-.4-.2-.9-.2-1.2 0z"/></svg><span><small>Get it on</small>Google Play</span></a><a class="store" href="https://apps.apple.com/us/app/ateright-ai-calorie-counter/id6823991998" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg><span><small>Download on the</small>App Store</span></a></div>
   </div>
 </section>
 
 <footer><div class="wrap">
-  <div><b>AteRight</b> · <a href="index.html">Home</a> · <a href="features.html">Features</a> · <a href="guide.html">How to use it</a> · <a href="compare.html">Compare</a> · <a href="press.html">Press</a> · <a href="privacy.html">Privacy</a></div>
+  <div><b>AteRight</b> · <a href="index.html">Home</a> · <a href="features.html">Features</a> · <a href="guide.html">How to use it</a> · <a href="compare.html">Compare</a> · <a href="your-data.html">Your data</a> · <a href="press.html">Press</a> · <a href="privacy.html">Privacy</a></div>
   <div class="family-line">An app by CardRama, LLC. Also from us: <a href="https://dewgrow.com/"><img src="img/apps/dewgrow.png" alt="">DewGrow</a> <a href="https://cardrama.gg/"><img src="img/apps/cardrama.png" alt="">CardRama</a> <a href="https://cardrama.gg/apps">All our apps</a></div>
   <div>AteRight gives information about food, not medical advice. Calorie estimates are estimates; foods show their data source in the app.</div>
-  <div>© 2026 CardRama, LLC (<a href="https://cardrama.gg">cardrama.gg</a>). All rights reserved. AteRight™, the fork-and-knife plate logo, and "Trusted it. Tracked it. Ate Right." are trademarks of CardRama, LLC. Android and Google Play are trademarks of Google LLC. Apple, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Google Gemini, Groq, Anthropic Claude, Health Connect, USDA FoodData Central, and Open Food Facts are trademarks or marks of their respective owners; their mention does not imply affiliation with or endorsement of AteRight.</div>
+  <div>© 2026 CardRama, LLC (<a href="https://cardrama.gg">cardrama.gg</a>). All rights reserved. AteRight™, the fork-and-knife plate logo, and "Trusted it. Tracked it. Ate Right." are trademarks of CardRama, LLC. Android and Google Play are trademarks of Google LLC. Apple, iPhone and App Store are trademarks of Apple Inc., registered in the U.S. and other countries. Google Gemini, Groq, Anthropic Claude, Health Connect, USDA FoodData Central, and Open Food Facts are trademarks or marks of their respective owners; MyFitnessPal, Lose It! and Cronometer are trademarks of their respective owners; AteRight is not affiliated with them. Their mention does not imply affiliation with or endorsement of AteRight.</div>
 </div></footer>
 
 </body>
